@@ -1,0 +1,28 @@
+﻿@page "/fetchdata"
+@using BlazorConfigExample.Shared
+@inject ClientAppOptions ClientAppOptions
+
+<PageTitle>Server Set client Options Example</PageTitle>
+
+<h1>Client Options (set by server appsettings.json)</h1>
+
+<p>This component demonstrates that we have received configuration data from the server.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Option Name</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ExampleOption1</td>
+            <td>@ClientAppOptions.ExampleOption1</td>
+        </tr>
+        <tr>
+            <td>ExampleOption2</td>
+            <td>@ClientAppOptions.ExampleOption2</td>
+        </tr>
+    </tbody>
+</table>
